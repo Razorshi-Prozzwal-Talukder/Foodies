@@ -1,0 +1,582 @@
+H:\ASP.NET_MVC Project\Foodies\bin\Foodies.dll.config
+H:\ASP.NET_MVC Project\Foodies\bin\Foodies.dll
+H:\ASP.NET_MVC Project\Foodies\bin\Foodies.pdb
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\csc.exe
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\csc.exe.config
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\csc.rsp
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\csi.exe
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\csi.exe.config
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\csi.rsp
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\Microsoft.Managed.Core.targets
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\Microsoft.Win32.Primitives.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.AppContext.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Collections.Immutable.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Console.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Diagnostics.StackTrace.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Globalization.Calendars.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.IO.Compression.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.IO.Compression.ZipFile.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.IO.FileSystem.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.IO.FileSystem.Primitives.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Net.Http.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Net.Sockets.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Reflection.Metadata.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Security.Cryptography.Encoding.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Security.Cryptography.Primitives.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Text.Encoding.CodePages.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Threading.Tasks.Extensions.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.ValueTuple.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Xml.ReaderWriter.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Xml.XmlDocument.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Xml.XPath.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\System.Xml.XPath.XDocument.dll
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\vbc.exe
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\vbc.exe.config
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\vbc.rsp
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\VBCSCompiler.exe
+H:\ASP.NET_MVC Project\Foodies\bin\roslyn\VBCSCompiler.exe.config
+H:\ASP.NET_MVC Project\Foodies\bin\Antlr3.Runtime.dll
+H:\ASP.NET_MVC Project\Foodies\bin\EntityFramework.dll
+H:\ASP.NET_MVC Project\Foodies\bin\EntityFramework.SqlServer.dll
+H:\ASP.NET_MVC Project\Foodies\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\ASP.NET_MVC Project\Foodies\bin\Microsoft.Web.Infrastructure.dll
+H:\ASP.NET_MVC Project\Foodies\bin\Newtonsoft.Json.dll
+H:\ASP.NET_MVC Project\Foodies\bin\System.Web.Helpers.dll
+H:\ASP.NET_MVC Project\Foodies\bin\System.Web.Mvc.dll
+H:\ASP.NET_MVC Project\Foodies\bin\System.Web.Optimization.dll
+H:\ASP.NET_MVC Project\Foodies\bin\System.Web.Razor.dll
+H:\ASP.NET_MVC Project\Foodies\bin\System.Web.WebPages.Deployment.dll
+H:\ASP.NET_MVC Project\Foodies\bin\System.Web.WebPages.dll
+H:\ASP.NET_MVC Project\Foodies\bin\System.Web.WebPages.Razor.dll
+H:\ASP.NET_MVC Project\Foodies\bin\WebGrease.dll
+H:\ASP.NET_MVC Project\Foodies\bin\EntityFramework.xml
+H:\ASP.NET_MVC Project\Foodies\bin\EntityFramework.SqlServer.xml
+H:\ASP.NET_MVC Project\Foodies\bin\System.Web.Helpers.xml
+H:\ASP.NET_MVC Project\Foodies\bin\System.Web.Mvc.xml
+H:\ASP.NET_MVC Project\Foodies\bin\System.Web.Optimization.xml
+H:\ASP.NET_MVC Project\Foodies\bin\System.Web.Razor.xml
+H:\ASP.NET_MVC Project\Foodies\bin\System.Web.WebPages.xml
+H:\ASP.NET_MVC Project\Foodies\bin\System.Web.WebPages.Deployment.xml
+H:\ASP.NET_MVC Project\Foodies\bin\System.Web.WebPages.Razor.xml
+H:\ASP.NET_MVC Project\Foodies\bin\Newtonsoft.Json.xml
+H:\ASP.NET_MVC Project\Foodies\bin\Antlr3.Runtime.pdb
+H:\ASP.NET_MVC Project\Foodies\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\ASP.NET_MVC Project\Foodies\obj\Debug\Foodies.csproj.CoreCompileInputs.cache
+H:\ASP.NET_MVC Project\Foodies\obj\Debug\Foodies.csproj.CopyComplete
+H:\ASP.NET_MVC Project\Foodies\obj\Debug\Foodies.dll
+H:\ASP.NET_MVC Project\Foodies\obj\Debug\Foodies.pdb
+H:\ASP.NET_MVC Project\Foodies\obj\Debug\Foodies.csprojAssemblyReference.cache
+F:\C#\Foofies\Foodies\bin\Foodies.dll.config
+F:\C#\Foofies\Foodies\bin\Foodies.dll
+F:\C#\Foofies\Foodies\bin\Foodies.pdb
+F:\C#\Foofies\Foodies\bin\roslyn\csc.exe
+F:\C#\Foofies\Foodies\bin\roslyn\csc.exe.config
+F:\C#\Foofies\Foodies\bin\roslyn\csc.rsp
+F:\C#\Foofies\Foodies\bin\roslyn\csi.exe
+F:\C#\Foofies\Foodies\bin\roslyn\csi.exe.config
+F:\C#\Foofies\Foodies\bin\roslyn\csi.rsp
+F:\C#\Foofies\Foodies\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\C#\Foofies\Foodies\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\C#\Foofies\Foodies\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\C#\Foofies\Foodies\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\C#\Foofies\Foodies\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\C#\Foofies\Foodies\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\C#\Foofies\Foodies\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\C#\Foofies\Foodies\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\C#\Foofies\Foodies\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\C#\Foofies\Foodies\bin\roslyn\Microsoft.Managed.Core.targets
+F:\C#\Foofies\Foodies\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\C#\Foofies\Foodies\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.AppContext.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Collections.Immutable.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Console.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Globalization.Calendars.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.IO.Compression.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.IO.FileSystem.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Net.Http.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Net.Sockets.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Reflection.Metadata.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.ValueTuple.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Xml.XmlDocument.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Xml.XPath.dll
+F:\C#\Foofies\Foodies\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\C#\Foofies\Foodies\bin\roslyn\vbc.exe
+F:\C#\Foofies\Foodies\bin\roslyn\vbc.exe.config
+F:\C#\Foofies\Foodies\bin\roslyn\vbc.rsp
+F:\C#\Foofies\Foodies\bin\roslyn\VBCSCompiler.exe
+F:\C#\Foofies\Foodies\bin\roslyn\VBCSCompiler.exe.config
+F:\C#\Foofies\Foodies\bin\Antlr3.Runtime.dll
+F:\C#\Foofies\Foodies\bin\EntityFramework.dll
+F:\C#\Foofies\Foodies\bin\EntityFramework.SqlServer.dll
+F:\C#\Foofies\Foodies\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\C#\Foofies\Foodies\bin\Microsoft.Web.Infrastructure.dll
+F:\C#\Foofies\Foodies\bin\Newtonsoft.Json.dll
+F:\C#\Foofies\Foodies\bin\System.Web.Helpers.dll
+F:\C#\Foofies\Foodies\bin\System.Web.Mvc.dll
+F:\C#\Foofies\Foodies\bin\System.Web.Optimization.dll
+F:\C#\Foofies\Foodies\bin\System.Web.Razor.dll
+F:\C#\Foofies\Foodies\bin\System.Web.WebPages.Deployment.dll
+F:\C#\Foofies\Foodies\bin\System.Web.WebPages.dll
+F:\C#\Foofies\Foodies\bin\System.Web.WebPages.Razor.dll
+F:\C#\Foofies\Foodies\bin\WebGrease.dll
+F:\C#\Foofies\Foodies\bin\EntityFramework.xml
+F:\C#\Foofies\Foodies\bin\EntityFramework.SqlServer.xml
+F:\C#\Foofies\Foodies\bin\System.Web.Helpers.xml
+F:\C#\Foofies\Foodies\bin\System.Web.Mvc.xml
+F:\C#\Foofies\Foodies\bin\System.Web.Optimization.xml
+F:\C#\Foofies\Foodies\bin\System.Web.Razor.xml
+F:\C#\Foofies\Foodies\bin\System.Web.WebPages.xml
+F:\C#\Foofies\Foodies\bin\System.Web.WebPages.Deployment.xml
+F:\C#\Foofies\Foodies\bin\System.Web.WebPages.Razor.xml
+F:\C#\Foofies\Foodies\bin\Newtonsoft.Json.xml
+F:\C#\Foofies\Foodies\bin\Antlr3.Runtime.pdb
+F:\C#\Foofies\Foodies\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\C#\Foofies\Foodies\obj\Debug\Foodies.csprojAssemblyReference.cache
+F:\C#\Foofies\Foodies\obj\Debug\Foodies.csproj.CoreCompileInputs.cache
+F:\C#\Foofies\Foodies\obj\Debug\Foodies.csproj.CopyComplete
+F:\C#\Foofies\Foodies\obj\Debug\Foodies.dll
+F:\C#\Foofies\Foodies\obj\Debug\Foodies.pdb
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\Foodies.dll.config
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\Foodies.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\Foodies.pdb
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\csc.exe
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\csc.exe.config
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\csc.rsp
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\csi.exe
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\csi.exe.config
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\csi.rsp
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.AppContext.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Console.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.IO.Compression.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Net.Http.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.ValueTuple.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\vbc.exe
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\vbc.exe.config
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\vbc.rsp
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\VBCSCompiler.exe
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\Antlr3.Runtime.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\EntityFramework.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\EntityFramework.SqlServer.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\Newtonsoft.Json.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\System.Web.Helpers.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\System.Web.Mvc.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\System.Web.Optimization.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\System.Web.Razor.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\System.Web.WebPages.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\System.Web.WebPages.Razor.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\WebGrease.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\EntityFramework.xml
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\EntityFramework.SqlServer.xml
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\System.Web.Helpers.xml
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\System.Web.Mvc.xml
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\System.Web.Optimization.xml
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\System.Web.Razor.xml
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\System.Web.WebPages.xml
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\System.Web.WebPages.Razor.xml
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\Newtonsoft.Json.xml
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\Antlr3.Runtime.pdb
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\obj\Debug\Foodies.csprojAssemblyReference.cache
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\obj\Debug\Foodies.csproj.CoreCompileInputs.cache
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\obj\Debug\Foodies.csproj.CopyComplete
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\obj\Debug\Foodies.dll
+C:\Users\Dipa Roy\source\repos\Foofies\Foodies\obj\Debug\Foodies.pdb
+F:\C#\Foodies\bin\Foodies.dll.config
+F:\C#\Foodies\bin\Foodies.dll
+F:\C#\Foodies\bin\Foodies.pdb
+F:\C#\Foodies\bin\roslyn\csc.exe
+F:\C#\Foodies\bin\roslyn\csc.exe.config
+F:\C#\Foodies\bin\roslyn\csc.rsp
+F:\C#\Foodies\bin\roslyn\csi.exe
+F:\C#\Foodies\bin\roslyn\csi.exe.config
+F:\C#\Foodies\bin\roslyn\csi.rsp
+F:\C#\Foodies\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\C#\Foodies\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\C#\Foodies\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\C#\Foodies\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\C#\Foodies\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\C#\Foodies\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\C#\Foodies\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\C#\Foodies\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\C#\Foodies\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\C#\Foodies\bin\roslyn\Microsoft.Managed.Core.targets
+F:\C#\Foodies\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\C#\Foodies\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\C#\Foodies\bin\roslyn\System.AppContext.dll
+F:\C#\Foodies\bin\roslyn\System.Collections.Immutable.dll
+F:\C#\Foodies\bin\roslyn\System.Console.dll
+F:\C#\Foodies\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\C#\Foodies\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\C#\Foodies\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\C#\Foodies\bin\roslyn\System.Globalization.Calendars.dll
+F:\C#\Foodies\bin\roslyn\System.IO.Compression.dll
+F:\C#\Foodies\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\C#\Foodies\bin\roslyn\System.IO.FileSystem.dll
+F:\C#\Foodies\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\C#\Foodies\bin\roslyn\System.Net.Http.dll
+F:\C#\Foodies\bin\roslyn\System.Net.Sockets.dll
+F:\C#\Foodies\bin\roslyn\System.Reflection.Metadata.dll
+F:\C#\Foodies\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\C#\Foodies\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\C#\Foodies\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\C#\Foodies\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\C#\Foodies\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\C#\Foodies\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\C#\Foodies\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\C#\Foodies\bin\roslyn\System.ValueTuple.dll
+F:\C#\Foodies\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\C#\Foodies\bin\roslyn\System.Xml.XmlDocument.dll
+F:\C#\Foodies\bin\roslyn\System.Xml.XPath.dll
+F:\C#\Foodies\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\C#\Foodies\bin\roslyn\vbc.exe
+F:\C#\Foodies\bin\roslyn\vbc.exe.config
+F:\C#\Foodies\bin\roslyn\vbc.rsp
+F:\C#\Foodies\bin\roslyn\VBCSCompiler.exe
+F:\C#\Foodies\bin\roslyn\VBCSCompiler.exe.config
+F:\C#\Foodies\bin\Antlr3.Runtime.dll
+F:\C#\Foodies\bin\EntityFramework.dll
+F:\C#\Foodies\bin\EntityFramework.SqlServer.dll
+F:\C#\Foodies\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\C#\Foodies\bin\Microsoft.Web.Infrastructure.dll
+F:\C#\Foodies\bin\Newtonsoft.Json.dll
+F:\C#\Foodies\bin\System.Web.Helpers.dll
+F:\C#\Foodies\bin\System.Web.Mvc.dll
+F:\C#\Foodies\bin\System.Web.Optimization.dll
+F:\C#\Foodies\bin\System.Web.Razor.dll
+F:\C#\Foodies\bin\System.Web.WebPages.Deployment.dll
+F:\C#\Foodies\bin\System.Web.WebPages.dll
+F:\C#\Foodies\bin\System.Web.WebPages.Razor.dll
+F:\C#\Foodies\bin\WebGrease.dll
+F:\C#\Foodies\bin\EntityFramework.xml
+F:\C#\Foodies\bin\EntityFramework.SqlServer.xml
+F:\C#\Foodies\bin\System.Web.Helpers.xml
+F:\C#\Foodies\bin\System.Web.Mvc.xml
+F:\C#\Foodies\bin\System.Web.Optimization.xml
+F:\C#\Foodies\bin\System.Web.Razor.xml
+F:\C#\Foodies\bin\System.Web.WebPages.xml
+F:\C#\Foodies\bin\System.Web.WebPages.Deployment.xml
+F:\C#\Foodies\bin\System.Web.WebPages.Razor.xml
+F:\C#\Foodies\bin\Newtonsoft.Json.xml
+F:\C#\Foodies\bin\Antlr3.Runtime.pdb
+F:\C#\Foodies\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\C#\Foodies\obj\Debug\Foodies.csproj.CoreCompileInputs.cache
+F:\C#\Foodies\obj\Debug\Foodies.csproj.CopyComplete
+F:\C#\Foodies\obj\Debug\Foodies.dll
+F:\C#\Foodies\obj\Debug\Foodies.pdb
+F:\C#\Foodies\obj\Debug\Foodies.csprojAssemblyReference.cache
+F:\C#\Temp\Foodies\bin\Foodies.dll.config
+F:\C#\Temp\Foodies\bin\Foodies.dll
+F:\C#\Temp\Foodies\bin\Foodies.pdb
+F:\C#\Temp\Foodies\bin\roslyn\csc.exe
+F:\C#\Temp\Foodies\bin\roslyn\csc.exe.config
+F:\C#\Temp\Foodies\bin\roslyn\csc.rsp
+F:\C#\Temp\Foodies\bin\roslyn\csi.exe
+F:\C#\Temp\Foodies\bin\roslyn\csi.exe.config
+F:\C#\Temp\Foodies\bin\roslyn\csi.rsp
+F:\C#\Temp\Foodies\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\C#\Temp\Foodies\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\C#\Temp\Foodies\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\C#\Temp\Foodies\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\C#\Temp\Foodies\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\C#\Temp\Foodies\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\C#\Temp\Foodies\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\C#\Temp\Foodies\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\C#\Temp\Foodies\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\C#\Temp\Foodies\bin\roslyn\Microsoft.Managed.Core.targets
+F:\C#\Temp\Foodies\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\C#\Temp\Foodies\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.AppContext.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Collections.Immutable.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Console.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Globalization.Calendars.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.IO.Compression.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.IO.FileSystem.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Net.Http.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Net.Sockets.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Reflection.Metadata.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.ValueTuple.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Xml.XmlDocument.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Xml.XPath.dll
+F:\C#\Temp\Foodies\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\C#\Temp\Foodies\bin\roslyn\vbc.exe
+F:\C#\Temp\Foodies\bin\roslyn\vbc.exe.config
+F:\C#\Temp\Foodies\bin\roslyn\vbc.rsp
+F:\C#\Temp\Foodies\bin\roslyn\VBCSCompiler.exe
+F:\C#\Temp\Foodies\bin\roslyn\VBCSCompiler.exe.config
+F:\C#\Temp\Foodies\bin\Antlr3.Runtime.dll
+F:\C#\Temp\Foodies\bin\EntityFramework.dll
+F:\C#\Temp\Foodies\bin\EntityFramework.SqlServer.dll
+F:\C#\Temp\Foodies\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\C#\Temp\Foodies\bin\Microsoft.Web.Infrastructure.dll
+F:\C#\Temp\Foodies\bin\Newtonsoft.Json.dll
+F:\C#\Temp\Foodies\bin\System.Web.Helpers.dll
+F:\C#\Temp\Foodies\bin\System.Web.Mvc.dll
+F:\C#\Temp\Foodies\bin\System.Web.Optimization.dll
+F:\C#\Temp\Foodies\bin\System.Web.Razor.dll
+F:\C#\Temp\Foodies\bin\System.Web.WebPages.Deployment.dll
+F:\C#\Temp\Foodies\bin\System.Web.WebPages.dll
+F:\C#\Temp\Foodies\bin\System.Web.WebPages.Razor.dll
+F:\C#\Temp\Foodies\bin\WebGrease.dll
+F:\C#\Temp\Foodies\bin\EntityFramework.xml
+F:\C#\Temp\Foodies\bin\EntityFramework.SqlServer.xml
+F:\C#\Temp\Foodies\bin\System.Web.Helpers.xml
+F:\C#\Temp\Foodies\bin\System.Web.Mvc.xml
+F:\C#\Temp\Foodies\bin\System.Web.Optimization.xml
+F:\C#\Temp\Foodies\bin\System.Web.Razor.xml
+F:\C#\Temp\Foodies\bin\System.Web.WebPages.xml
+F:\C#\Temp\Foodies\bin\System.Web.WebPages.Deployment.xml
+F:\C#\Temp\Foodies\bin\System.Web.WebPages.Razor.xml
+F:\C#\Temp\Foodies\bin\Newtonsoft.Json.xml
+F:\C#\Temp\Foodies\bin\Antlr3.Runtime.pdb
+F:\C#\Temp\Foodies\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\C#\Temp\Foodies\obj\Debug\Foodies.csprojAssemblyReference.cache
+F:\C#\Temp\Foodies\obj\Debug\Foodies.csproj.CoreCompileInputs.cache
+F:\C#\Temp\Foodies\obj\Debug\Foodies.csproj.CopyComplete
+F:\C#\Temp\Foodies\obj\Debug\Foodies.dll
+F:\C#\Temp\Foodies\obj\Debug\Foodies.pdb
+F:\Git\Try\bin\Foodies.dll.config
+F:\Git\Try\bin\Foodies.dll
+F:\Git\Try\bin\Foodies.pdb
+F:\Git\Try\bin\roslyn\csc.exe
+F:\Git\Try\bin\roslyn\csc.exe.config
+F:\Git\Try\bin\roslyn\csc.rsp
+F:\Git\Try\bin\roslyn\csi.exe
+F:\Git\Try\bin\roslyn\csi.exe.config
+F:\Git\Try\bin\roslyn\csi.rsp
+F:\Git\Try\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Git\Try\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Git\Try\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Git\Try\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Git\Try\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Git\Try\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Git\Try\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Git\Try\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Git\Try\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Git\Try\bin\roslyn\Microsoft.Managed.Core.targets
+F:\Git\Try\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Git\Try\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\Git\Try\bin\roslyn\System.AppContext.dll
+F:\Git\Try\bin\roslyn\System.Collections.Immutable.dll
+F:\Git\Try\bin\roslyn\System.Console.dll
+F:\Git\Try\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\Git\Try\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\Git\Try\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Git\Try\bin\roslyn\System.Globalization.Calendars.dll
+F:\Git\Try\bin\roslyn\System.IO.Compression.dll
+F:\Git\Try\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\Git\Try\bin\roslyn\System.IO.FileSystem.dll
+F:\Git\Try\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Git\Try\bin\roslyn\System.Net.Http.dll
+F:\Git\Try\bin\roslyn\System.Net.Sockets.dll
+F:\Git\Try\bin\roslyn\System.Reflection.Metadata.dll
+F:\Git\Try\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\Git\Try\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\Git\Try\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\Git\Try\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\Git\Try\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\Git\Try\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\Git\Try\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\Git\Try\bin\roslyn\System.ValueTuple.dll
+F:\Git\Try\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\Git\Try\bin\roslyn\System.Xml.XmlDocument.dll
+F:\Git\Try\bin\roslyn\System.Xml.XPath.dll
+F:\Git\Try\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\Git\Try\bin\roslyn\vbc.exe
+F:\Git\Try\bin\roslyn\vbc.exe.config
+F:\Git\Try\bin\roslyn\vbc.rsp
+F:\Git\Try\bin\roslyn\VBCSCompiler.exe
+F:\Git\Try\bin\roslyn\VBCSCompiler.exe.config
+F:\Git\Try\bin\Antlr3.Runtime.dll
+F:\Git\Try\bin\EntityFramework.dll
+F:\Git\Try\bin\EntityFramework.SqlServer.dll
+F:\Git\Try\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Git\Try\bin\Microsoft.Web.Infrastructure.dll
+F:\Git\Try\bin\Newtonsoft.Json.dll
+F:\Git\Try\bin\System.Web.Helpers.dll
+F:\Git\Try\bin\System.Web.Mvc.dll
+F:\Git\Try\bin\System.Web.Optimization.dll
+F:\Git\Try\bin\System.Web.Razor.dll
+F:\Git\Try\bin\System.Web.WebPages.Deployment.dll
+F:\Git\Try\bin\System.Web.WebPages.dll
+F:\Git\Try\bin\System.Web.WebPages.Razor.dll
+F:\Git\Try\bin\WebGrease.dll
+F:\Git\Try\bin\EntityFramework.xml
+F:\Git\Try\bin\EntityFramework.SqlServer.xml
+F:\Git\Try\bin\System.Web.Helpers.xml
+F:\Git\Try\bin\System.Web.Mvc.xml
+F:\Git\Try\bin\System.Web.Optimization.xml
+F:\Git\Try\bin\System.Web.Razor.xml
+F:\Git\Try\bin\System.Web.WebPages.xml
+F:\Git\Try\bin\System.Web.WebPages.Deployment.xml
+F:\Git\Try\bin\System.Web.WebPages.Razor.xml
+F:\Git\Try\bin\Newtonsoft.Json.xml
+F:\Git\Try\bin\Antlr3.Runtime.pdb
+F:\Git\Try\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Git\Try\obj\Debug\Foodies.csprojAssemblyReference.cache
+F:\Git\Try\obj\Debug\Foodies.csproj.CoreCompileInputs.cache
+F:\Git\Try\obj\Debug\Foodies.csproj.CopyComplete
+F:\Git\Try\obj\Debug\Foodies.dll
+F:\Git\Try\obj\Debug\Foodies.pdb
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\Foodies.dll.config
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\Foodies.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\Foodies.pdb
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\csc.exe
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\csc.exe.config
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\csc.rsp
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\csi.exe
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\csi.exe.config
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\csi.rsp
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\Microsoft.Managed.Core.targets
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.AppContext.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Collections.Immutable.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Console.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Globalization.Calendars.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.IO.Compression.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.IO.FileSystem.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Net.Http.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Net.Sockets.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Reflection.Metadata.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.ValueTuple.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Xml.XmlDocument.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Xml.XPath.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\vbc.exe
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\vbc.exe.config
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\vbc.rsp
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\VBCSCompiler.exe
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\roslyn\VBCSCompiler.exe.config
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\Antlr3.Runtime.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\EntityFramework.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\EntityFramework.SqlServer.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\Microsoft.Web.Infrastructure.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\Newtonsoft.Json.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\System.Web.Helpers.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\System.Web.Mvc.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\System.Web.Optimization.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\System.Web.Razor.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\System.Web.WebPages.Deployment.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\System.Web.WebPages.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\System.Web.WebPages.Razor.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\WebGrease.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\EntityFramework.xml
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\EntityFramework.SqlServer.xml
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\System.Web.Helpers.xml
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\System.Web.Mvc.xml
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\System.Web.Optimization.xml
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\System.Web.Razor.xml
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\System.Web.WebPages.xml
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\System.Web.WebPages.Deployment.xml
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\System.Web.WebPages.Razor.xml
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\Newtonsoft.Json.xml
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\Antlr3.Runtime.pdb
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\obj\Debug\Foodies.csprojAssemblyReference.cache
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\obj\Debug\Foodies.csproj.CoreCompileInputs.cache
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\obj\Debug\Foodies.csproj.CopyComplete
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\obj\Debug\Foodies.dll
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\obj\Debug\Foodies.pdb
+F:\Project\DipaRoy-ecommerce-95cac3d66db1\bin\Rotativa.dll

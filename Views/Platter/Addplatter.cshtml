@@ -1,0 +1,175 @@
+﻿@model Foodies.MyModel.Platter
+
+@using Foodies.MyModel;
+
+@{
+    ViewBag.Title = "Addplatter";
+}
+<head>
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    }
+</head>
+
+
+
+
+@*@if (Session["Rest_id"] != null)
+{
+    <h2> @Session["Rest_id"]</h2>
+}*@
+
+
+
+@if(ViewBag.Msg != null)
+{
+    <div class="well text-center">
+        <h5>@ViewBag.Msg</h5> 
+    </div>
+}
+
+    <body style="background-color:ghostwhite;">
+
+
+
+
+        <h2 class="text-center">Add New Platter</h2>
+        @*@if (Session["scode"] != null)
+        {
+            <h4 class="">@Html.ActionLink("Your Platter List", "Index", new { code = @Session["scode"] })</h4>
+        }*@
+        <hr />
+        <div class="row">
+
+
+            <div class="col-md-offset-3 col-md-6" style="background-color:white;">
+                @using (Html.BeginForm("Addplatter", "Platter", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+
+                    @Html.HiddenFor(model => model.platter_id)
+                    @Html.HiddenFor(model => model.Rest_id, new { @Value = @Session["Rest_id"] })
+
+                    <div class="form-horizontal">
+                        <h4 class="text-center">Platter Table</h4>
+                        <hr />
+
+                        <div class="form-group">
+                            <div class="control-label col-md-3">
+                                <label>Platter Name:</label>
+                            </div>
+                            <div class="col-md-9">
+                                @Html.EditorFor(model => model.platter_name, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.platter_name, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="control-label col-md-3">
+                                <label>Description:</label>
+                            </div>
+                            <div class="col-md-9">
+                                @Html.EditorFor(model => model.platter_description, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.platter_description, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="control-label col-md-3">
+                                <label>Platter Price:</label>
+                            </div>
+                            <div class="col-md-9">
+                                @Html.EditorFor(model => model.platter_price, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.platter_price, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="control-label col-md-3">
+                                <label>Secret Code:</label>
+                            </div>
+                            <div class="col-md-9">
+                                @Html.EditorFor(model => model.secret_code, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.secret_code, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="control-label col-md-3">
+                                <label>Platter Image:</label>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="file" id="image1" name="image1" />
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <div class="col-md-offset-3 col-md-9">
+                                <input type="submit" value="Submit" class="btn btn-primary" />
+                            </div>
+                        </div>
+                    </div>
+                }
+
+
+                <div class="col-md-3" style="background-color:white;">
+
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+
+
+<script type="text/javascript">
+
+
+
+    $("#btn").click(function () {
+
+
+        var code = $("#code").val();
+        console.log(code);
+        $("#close").trigger('click');
+        alert("sss");
+
+
+        $.ajax({
+
+            url: '/Platter/Index',
+
+            data: {
+                id: code
+            }
+
+        })
+            .done(function (response) {
+
+
+                $("#result").html(response);
+
+            })
+            .fail(function (XMLhttpRequest, textStatus, errorThrown) {
+                alert("rrr");
+            });
+
+
+
+
+    });
+
+</script>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+

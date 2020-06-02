@@ -1,0 +1,68 @@
+﻿@model Foodies.Models.tbl_platter
+
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+
+<h2 class="text-center">Details</h2>
+<hr />
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+            <h4 class="text-center">Platter Table</h4>
+            <hr />
+
+            <div style="text-align:center;">
+                @{
+                    var base64 = Convert.ToBase64String(Model.platter_image);
+                    var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+                }
+
+                <img src="@imgSrc" width="150" height="150" />
+            </div>
+            <br />
+            <dl class="dl-horizontal" style="margin-bottom:10px;">
+
+
+                <dt>
+                    Platter Name:
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.platter_name)
+                </dd>
+
+                <dt>
+                    Description:
+                </dt>
+
+                <dd style="text-align:justify;">
+                    @Html.DisplayFor(model => model.platter_description)
+                </dd>
+
+                <dt>
+                    Platter Price:
+                </dt>
+                
+                <dd>
+                    @Html.DisplayFor(model => model.platter_price)
+                    @*@Html.DisplayFor(model => model.secret_code)*@
+
+                </dd>
+            </dl>
+        </div>
+        <div class="col-md-offset-4 col-md-4">
+           
+        </div>
+    </div>
+
+</div>
+<p>
+   
+    @Html.ActionLink("Back to List", "Index",new { id =  Model.secret_code })
+</p>
+

@@ -1,0 +1,195 @@
+﻿@model Foodies.MyModel.User
+
+@{
+    ViewBag.Title = "Signup";
+}
+<br />
+
+<head>
+    <link href="~/CustomStyle/RegisterStyleSheet.css" rel="stylesheet" />
+
+
+
+</head>
+
+
+<body>
+    <div id="RegistrationFormLayout">
+        <div class="row mx-0">
+
+            <div class="d-none col-md-5 d-md-block" id="RegisImage">
+
+                <img src="~/Image/register.jpg" alt="Register" class="img-responsive" style="" />
+            </div>
+
+
+            <div class="col-12 col-md-7" id="regisForm">
+                  @Html.AntiForgeryToken()
+                    <h3>Registration Form</h3>
+                    <hr>
+                <p id="result"></p>
+                    <div id="msg1" class="hidden">
+                        <div class="alert alert-success">
+                            <span class="glyphicon glyphicon-ok"></span>
+                            <strong>
+                                An Email has been sent to your email. To activate your  account Please verify your email address !
+                            </strong>
+                        </div>
+                    </div>
+
+
+                    @*<div id="msg2">
+                        <div class="alert alert-danger">
+                            <span class="glyphicon glyphicon-remove"></span>
+                                <strong>Registration Failed !</strong>
+                        </div>
+                    </div>*@
+
+
+
+                    <div class="row" id="formhide">
+                        <form class="form-horizontal" id="RegForm">
+
+
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <label class="radio-inline">
+                                            @Html.RadioButtonFor(model => model.Role_Id, 2, new { @name = "Role_Id", htmlAttributes = new { @class = "form-control" } })
+                                            Restaurant
+                                        </label>
+                                        <label class="radio-inline">
+                                            @Html.RadioButtonFor(model => model.Role_Id, 3, new { @name = "Role_Id", htmlAttributes = new { @class = "form-control" } })
+                                            Customer
+                                        </label>
+
+                                        @Html.ValidationMessageFor(model => model.Role_Id, "", new { @class = "text-danger" })
+
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        @Html.EditorFor(model => model.user_name, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter Your Name", @autocomplete = "off" } })
+                                        <br />
+                                        @Html.ValidationMessageFor(model => model.user_name, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+
+                                        @Html.EditorFor(model => model.user_email, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter Email", @autocomplete = "off" } })
+                                        <br />
+                                        @Html.ValidationMessageFor(model => model.user_email, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="form-group">
+                                <div class="col-md-12 col-lg-12">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        @Html.PasswordFor(model => model.user_password, new { @class = "form-control", @placeholder = "*******" })
+                                        <br />
+                                        @Html.ValidationMessageFor(model => model.user_password, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </form>
+
+                        <div class="form-group">
+                            <div class="">
+                                <button type="submit" class="btn btn-primary " onclick="SaveForm()" style="margin-top:10px;"><i class="glyphicon glyphicon-registration-mark"></i>  Registration</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+
+                    @Html.ActionLink("Click to Login", "Login")
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+<script src="~/Scripts/bootstrap.min.js"></script>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+<script type="text/javascript">
+
+  
+    
+
+    function SaveForm() {
+        debugger;
+        
+
+       
+        var data = $("#RegForm").serialize();
+        
+        $.ajax({
+         
+            type: "POST",
+            data: data,
+            url: "/Account/Sign",
+
+
+        })
+            .done(function (result) {
+               // alert("start");
+            $("#msg1").removeClass("hidden");
+            debugger;
+            if (result.Success) {
+                debugger;
+
+               // alert(result);
+                $("#formhide").hide();
+                //alert("Please check your email to active account.");
+               
+
+            }
+            else {
+                alert(result.LoginError);
+            }
+
+
+         })
+         .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+                debugger;
+                $("#formhide").hide();
+            
+                //$("#msg2").show();
+
+         });
+
+
+    }
+
+      
+</script>

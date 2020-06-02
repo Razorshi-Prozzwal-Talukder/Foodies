@@ -1,0 +1,129 @@
+﻿@model Foodies.Models.Rating_tbl
+
+@{
+    ViewBag.Title = "UpdateComment";
+}
+
+<head>
+
+    @Scripts.Render("~/bundles/jquery")
+
+
+</head>
+@{
+    var i = 0;
+}
+<button class="btn btn-primary hidden"  type="button" id="btn@(i)" data-toggle="modal" data-target="#@Model.Rating_id"></button>
+
+
+
+@using (Html.BeginForm("UpdateComment", "Home", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.Rating_id)
+   
+
+
+    <!--Review modal-->
+    <div class="modal" id="@Model.Rating_id">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" id="backpage">&times;</button>
+                    <h4 class="modal-title text-center" style="color:steelblue;">Update Your Review s <i class="far fa-hand-point-down"></i></h4>
+
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+ 
+
+                    <input type="hidden" name="User_id" value="@Model.User_id" />
+
+                    <input type="hidden" name="User_name" value="@Model.User_name" />
+
+                    <input type="hidden" name="Platter_id" value="@Model.Platter_id" />
+
+                    <span class="" style="float:right; color: gold">
+                       
+
+                        @{
+                           var ratingv = Model.Rate;                          
+                        }
+                        
+                    
+
+                        @for (int x = 1; x <= ratingv; x++)
+                        {
+
+                           <i class="rating fas fa-star" onclick="ratefunc(rateval@(i),@x)"></i>
+                        }
+                        
+                        @for (int x = ratingv + 1 ; x <= 5; x++)
+                         {
+                                <i class="rating far fa-star" onclick="ratefunc(rateval@(i),@x)"></i>
+                         }
+                        
+
+                    </span>
+
+                    <div class="form-group">
+                        <label>Write Your Comment</label>
+                        <input type="hidden" name="Rate" id="rateval@(i)" value="" />
+                        @*<textarea style="max-width:100% !important;height:34px;" class="form-control" name="Comment" placeholder="Write Your Comment Here(Optional)" rows="3" required></textarea>*@
+
+
+                        @Html.TextAreaFor(m => m.Comment, htmlAttributes: new { Style = "max-width:100% !important;height:34px;",
+                       placeholder = "Write Your Comment Here(Optional)" , rows = "3", @class = "form-control" })
+
+                    </div>
+
+                    <input type="submit" value="Update" class="btn btn-primary" />
+                    @*<button class="btn btn-primary" type="submit" onclick="reviewBtn(form@(i))">Submit</button>*@
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+}
+
+<script type="text/javascript">
+    window.onload = function () {
+        document.getElementById("btn@(i)").click();
+    };
+
+    $("#backpage").click(function () {
+
+         location.href = '@Url.Action("Index","Home")';
+
+    });
+
+
+    $(".rating").click(function () {
+
+
+        $(".rating").addClass("far").removeClass("fas");
+
+        $(this).addClass("fas").removeClass("far");
+        $(this).prevAll(".rating").addClass("fas").removeClass("far");
+        console.log("ok1");
+        debugger;
+
+
+    });
+
+    function ratefunc(idname, dataval) {
+        debugger;
+
+        $(idname).val(dataval);
+        console.log(idname);
+        console.log(dataval);
+        debugger;
+    }
+
+</script>
+

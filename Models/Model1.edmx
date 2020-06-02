@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="FoodieModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Rating_tbl">
+          <Key>
+            <PropertyRef Name="Rating_id" />
+          </Key>
+          <Property Name="Rating_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="User_id" Type="int" />
+          <Property Name="Rate" Type="int" Nullable="false" />
+          <Property Name="Comment" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Platter_id" Type="int" />
+          <Property Name="Time" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="User_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tbl_platter">
+          <Key>
+            <PropertyRef Name="platter_id" />
+          </Key>
+          <Property Name="platter_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="platter_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="platter_description" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="platter_image" Type="varbinary(max)" Nullable="false" />
+          <Property Name="platter_price" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Rest_id" Type="int" />
+          <Property Name="secret_code" Type="int" />
+          <Property Name="rating_total" Type="int" Nullable="false" />
+          <Property Name="rating_count" Type="int" Nullable="false" />
+          <Property Name="rating" Type="decimal" Precision="18" Scale="0" />
+        </EntityType>
+        <EntityType Name="tbl_restaurent">
+          <Key>
+            <PropertyRef Name="Rest_id" />
+          </Key>
+          <Property Name="Rest_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Rest_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Rest_location" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Rest_phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="secret_code" Type="int" />
+          <Property Name="User_id" Type="int" />
+        </EntityType>
+        <EntityType Name="User_Role">
+          <Key>
+            <PropertyRef Name="Role_Id" />
+          </Key>
+          <Property Name="Role_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="role_name" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="User_tbl">
+          <Key>
+            <PropertyRef Name="user_id" />
+          </Key>
+          <Property Name="user_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="user_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="user_email" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="user_password" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Role_Id" Type="int" />
+          <Property Name="IsValid" Type="bit" />
+        </EntityType>
+        <Association Name="FK_Rating_tbl_tbl_platter">
+          <End Role="tbl_platter" Type="Self.tbl_platter" Multiplicity="0..1" />
+          <End Role="Rating_tbl" Type="Self.Rating_tbl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_platter">
+              <PropertyRef Name="platter_id" />
+            </Principal>
+            <Dependent Role="Rating_tbl">
+              <PropertyRef Name="Platter_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_platter_tbl_restaurent">
+          <End Role="tbl_restaurent" Type="Self.tbl_restaurent" Multiplicity="0..1" />
+          <End Role="tbl_platter" Type="Self.tbl_platter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_restaurent">
+              <PropertyRef Name="Rest_id" />
+            </Principal>
+            <Dependent Role="tbl_platter">
+              <PropertyRef Name="Rest_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_restaurent_User_tbl">
+          <End Role="User_tbl" Type="Self.User_tbl" Multiplicity="0..1" />
+          <End Role="tbl_restaurent" Type="Self.tbl_restaurent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User_tbl">
+              <PropertyRef Name="user_id" />
+            </Principal>
+            <Dependent Role="tbl_restaurent">
+              <PropertyRef Name="User_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_tbl_User_Role">
+          <End Role="User_Role" Type="Self.User_Role" Multiplicity="0..1" />
+          <End Role="User_tbl" Type="Self.User_tbl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User_Role">
+              <PropertyRef Name="Role_Id" />
+            </Principal>
+            <Dependent Role="User_tbl">
+              <PropertyRef Name="Role_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="FoodieModelStoreContainer">
+          <EntitySet Name="Rating_tbl" EntityType="Self.Rating_tbl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_platter" EntityType="Self.tbl_platter" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_restaurent" EntityType="Self.tbl_restaurent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User_Role" EntityType="Self.User_Role" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="User_tbl" EntityType="Self.User_tbl" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Rating_tbl_tbl_platter" Association="Self.FK_Rating_tbl_tbl_platter">
+            <End Role="tbl_platter" EntitySet="tbl_platter" />
+            <End Role="Rating_tbl" EntitySet="Rating_tbl" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_platter_tbl_restaurent" Association="Self.FK_tbl_platter_tbl_restaurent">
+            <End Role="tbl_restaurent" EntitySet="tbl_restaurent" />
+            <End Role="tbl_platter" EntitySet="tbl_platter" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_restaurent_User_tbl" Association="Self.FK_tbl_restaurent_User_tbl">
+            <End Role="User_tbl" EntitySet="User_tbl" />
+            <End Role="tbl_restaurent" EntitySet="tbl_restaurent" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_tbl_User_Role" Association="Self.FK_User_tbl_User_Role">
+            <End Role="User_Role" EntitySet="User_Role" />
+            <End Role="User_tbl" EntitySet="User_tbl" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FoodieModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Rating_tbl">
+          <Key>
+            <PropertyRef Name="Rating_id" />
+          </Key>
+          <Property Name="Rating_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="User_id" Type="Int32" />
+          <Property Name="Rate" Type="Int32" Nullable="false" />
+          <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Platter_id" Type="Int32" />
+          <Property Name="Time" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="User_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="tbl_platter" Relationship="Self.FK_Rating_tbl_tbl_platter" FromRole="Rating_tbl" ToRole="tbl_platter" />
+        </EntityType>
+        <EntityType Name="tbl_platter">
+          <Key>
+            <PropertyRef Name="platter_id" />
+          </Key>
+          <Property Name="platter_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="platter_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="platter_description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="platter_image" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+          <Property Name="platter_price" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Rest_id" Type="Int32" />
+          <Property Name="secret_code" Type="Int32" />
+          <Property Name="rating_total" Type="Int32" Nullable="false" />
+          <Property Name="rating_count" Type="Int32" Nullable="false" />
+          <Property Name="rating" Type="Decimal" Precision="18" Scale="0" />
+          <NavigationProperty Name="Rating_tbl" Relationship="Self.FK_Rating_tbl_tbl_platter" FromRole="tbl_platter" ToRole="Rating_tbl" />
+          <NavigationProperty Name="tbl_restaurent" Relationship="Self.FK_tbl_platter_tbl_restaurent" FromRole="tbl_platter" ToRole="tbl_restaurent" />
+        </EntityType>
+        <EntityType Name="tbl_restaurent">
+          <Key>
+            <PropertyRef Name="Rest_id" />
+          </Key>
+          <Property Name="Rest_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Rest_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Rest_location" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Rest_phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="secret_code" Type="Int32" />
+          <Property Name="User_id" Type="Int32" />
+          <NavigationProperty Name="tbl_platter" Relationship="Self.FK_tbl_platter_tbl_restaurent" FromRole="tbl_restaurent" ToRole="tbl_platter" />
+          <NavigationProperty Name="User_tbl" Relationship="Self.FK_tbl_restaurent_User_tbl" FromRole="tbl_restaurent" ToRole="User_tbl" />
+        </EntityType>
+        <EntityType Name="User_Role">
+          <Key>
+            <PropertyRef Name="Role_Id" />
+          </Key>
+          <Property Name="Role_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="role_name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="User_tbl" Relationship="Self.FK_User_tbl_User_Role" FromRole="User_Role" ToRole="User_tbl" />
+        </EntityType>
+        <EntityType Name="User_tbl">
+          <Key>
+            <PropertyRef Name="user_id" />
+          </Key>
+          <Property Name="user_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="user_email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="user_password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Role_Id" Type="Int32" />
+          <Property Name="IsValid" Type="Boolean" />
+          <NavigationProperty Name="tbl_restaurent" Relationship="Self.FK_tbl_restaurent_User_tbl" FromRole="User_tbl" ToRole="tbl_restaurent" />
+          <NavigationProperty Name="User_Role" Relationship="Self.FK_User_tbl_User_Role" FromRole="User_tbl" ToRole="User_Role" />
+        </EntityType>
+        <Association Name="FK_Rating_tbl_tbl_platter">
+          <End Role="tbl_platter" Type="Self.tbl_platter" Multiplicity="0..1" />
+          <End Role="Rating_tbl" Type="Self.Rating_tbl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_platter">
+              <PropertyRef Name="platter_id" />
+            </Principal>
+            <Dependent Role="Rating_tbl">
+              <PropertyRef Name="Platter_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_platter_tbl_restaurent">
+          <End Role="tbl_restaurent" Type="Self.tbl_restaurent" Multiplicity="0..1" />
+          <End Role="tbl_platter" Type="Self.tbl_platter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_restaurent">
+              <PropertyRef Name="Rest_id" />
+            </Principal>
+            <Dependent Role="tbl_platter">
+              <PropertyRef Name="Rest_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_restaurent_User_tbl">
+          <End Role="User_tbl" Type="Self.User_tbl" Multiplicity="0..1" />
+          <End Role="tbl_restaurent" Type="Self.tbl_restaurent" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User_tbl">
+              <PropertyRef Name="user_id" />
+            </Principal>
+            <Dependent Role="tbl_restaurent">
+              <PropertyRef Name="User_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_User_tbl_User_Role">
+          <End Role="User_Role" Type="Self.User_Role" Multiplicity="0..1" />
+          <End Role="User_tbl" Type="Self.User_tbl" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User_Role">
+              <PropertyRef Name="Role_Id" />
+            </Principal>
+            <Dependent Role="User_tbl">
+              <PropertyRef Name="Role_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="FoodieEntities2" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Rating_tbl" EntityType="Self.Rating_tbl" />
+          <EntitySet Name="tbl_platter" EntityType="Self.tbl_platter" />
+          <EntitySet Name="tbl_restaurent" EntityType="Self.tbl_restaurent" />
+          <EntitySet Name="User_Role" EntityType="Self.User_Role" />
+          <EntitySet Name="User_tbl" EntityType="Self.User_tbl" />
+          <AssociationSet Name="FK_Rating_tbl_tbl_platter" Association="Self.FK_Rating_tbl_tbl_platter">
+            <End Role="tbl_platter" EntitySet="tbl_platter" />
+            <End Role="Rating_tbl" EntitySet="Rating_tbl" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_platter_tbl_restaurent" Association="Self.FK_tbl_platter_tbl_restaurent">
+            <End Role="tbl_restaurent" EntitySet="tbl_restaurent" />
+            <End Role="tbl_platter" EntitySet="tbl_platter" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_restaurent_User_tbl" Association="Self.FK_tbl_restaurent_User_tbl">
+            <End Role="User_tbl" EntitySet="User_tbl" />
+            <End Role="tbl_restaurent" EntitySet="tbl_restaurent" />
+          </AssociationSet>
+          <AssociationSet Name="FK_User_tbl_User_Role" Association="Self.FK_User_tbl_User_Role">
+            <End Role="User_Role" EntitySet="User_Role" />
+            <End Role="User_tbl" EntitySet="User_tbl" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FoodieModelStoreContainer" CdmEntityContainer="FoodieEntities2">
+          <EntitySetMapping Name="Rating_tbl">
+            <EntityTypeMapping TypeName="FoodieModel.Rating_tbl">
+              <MappingFragment StoreEntitySet="Rating_tbl">
+                <ScalarProperty Name="Rating_id" ColumnName="Rating_id" />
+                <ScalarProperty Name="User_id" ColumnName="User_id" />
+                <ScalarProperty Name="Rate" ColumnName="Rate" />
+                <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="Platter_id" ColumnName="Platter_id" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="User_name" ColumnName="User_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_platter">
+            <EntityTypeMapping TypeName="FoodieModel.tbl_platter">
+              <MappingFragment StoreEntitySet="tbl_platter">
+                <ScalarProperty Name="platter_id" ColumnName="platter_id" />
+                <ScalarProperty Name="platter_name" ColumnName="platter_name" />
+                <ScalarProperty Name="platter_description" ColumnName="platter_description" />
+                <ScalarProperty Name="platter_image" ColumnName="platter_image" />
+                <ScalarProperty Name="platter_price" ColumnName="platter_price" />
+                <ScalarProperty Name="Rest_id" ColumnName="Rest_id" />
+                <ScalarProperty Name="secret_code" ColumnName="secret_code" />
+                <ScalarProperty Name="rating_total" ColumnName="rating_total" />
+                <ScalarProperty Name="rating_count" ColumnName="rating_count" />
+                <ScalarProperty Name="rating" ColumnName="rating" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_restaurent">
+            <EntityTypeMapping TypeName="FoodieModel.tbl_restaurent">
+              <MappingFragment StoreEntitySet="tbl_restaurent">
+                <ScalarProperty Name="Rest_id" ColumnName="Rest_id" />
+                <ScalarProperty Name="Rest_name" ColumnName="Rest_name" />
+                <ScalarProperty Name="Rest_location" ColumnName="Rest_location" />
+                <ScalarProperty Name="Rest_phone" ColumnName="Rest_phone" />
+                <ScalarProperty Name="secret_code" ColumnName="secret_code" />
+                <ScalarProperty Name="User_id" ColumnName="User_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User_Role">
+            <EntityTypeMapping TypeName="FoodieModel.User_Role">
+              <MappingFragment StoreEntitySet="User_Role">
+                <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+                <ScalarProperty Name="role_name" ColumnName="role_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="User_tbl">
+            <EntityTypeMapping TypeName="FoodieModel.User_tbl">
+              <MappingFragment StoreEntitySet="User_tbl">
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="user_name" ColumnName="user_name" />
+                <ScalarProperty Name="user_email" ColumnName="user_email" />
+                <ScalarProperty Name="user_password" ColumnName="user_password" />
+                <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+                <ScalarProperty Name="IsValid" ColumnName="IsValid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

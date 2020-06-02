@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FoodieModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Rating_tbl">
+    <Key>
+      <PropertyRef Name="Rating_id" />
+    </Key>
+    <Property Name="Rating_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="User_id" Type="int" />
+    <Property Name="Rate" Type="int" Nullable="false" />
+    <Property Name="Comment" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Platter_id" Type="int" />
+    <Property Name="Time" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="User_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_platter">
+    <Key>
+      <PropertyRef Name="platter_id" />
+    </Key>
+    <Property Name="platter_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="platter_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="platter_description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="platter_image" Type="varbinary(max)" Nullable="false" />
+    <Property Name="platter_price" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Rest_id" Type="int" />
+    <Property Name="secret_code" Type="int" />
+    <Property Name="rating_total" Type="int" Nullable="false" />
+    <Property Name="rating_count" Type="int" Nullable="false" />
+    <Property Name="rating" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="tbl_restaurent">
+    <Key>
+      <PropertyRef Name="Rest_id" />
+    </Key>
+    <Property Name="Rest_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Rest_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Rest_location" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Rest_phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="secret_code" Type="int" />
+    <Property Name="User_id" Type="int" />
+  </EntityType>
+  <EntityType Name="User_Role">
+    <Key>
+      <PropertyRef Name="Role_Id" />
+    </Key>
+    <Property Name="Role_Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="role_name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User_tbl">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="user_email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="user_password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Role_Id" Type="int" />
+    <Property Name="IsValid" Type="bit" />
+  </EntityType>
+  <Association Name="FK_Rating_tbl_tbl_platter">
+    <End Role="tbl_platter" Type="Self.tbl_platter" Multiplicity="0..1" />
+    <End Role="Rating_tbl" Type="Self.Rating_tbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_platter">
+        <PropertyRef Name="platter_id" />
+      </Principal>
+      <Dependent Role="Rating_tbl">
+        <PropertyRef Name="Platter_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_platter_tbl_restaurent">
+    <End Role="tbl_restaurent" Type="Self.tbl_restaurent" Multiplicity="0..1" />
+    <End Role="tbl_platter" Type="Self.tbl_platter" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_restaurent">
+        <PropertyRef Name="Rest_id" />
+      </Principal>
+      <Dependent Role="tbl_platter">
+        <PropertyRef Name="Rest_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_restaurent_User_tbl">
+    <End Role="User_tbl" Type="Self.User_tbl" Multiplicity="0..1" />
+    <End Role="tbl_restaurent" Type="Self.tbl_restaurent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User_tbl">
+        <PropertyRef Name="user_id" />
+      </Principal>
+      <Dependent Role="tbl_restaurent">
+        <PropertyRef Name="User_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_tbl_User_Role">
+    <End Role="User_Role" Type="Self.User_Role" Multiplicity="0..1" />
+    <End Role="User_tbl" Type="Self.User_tbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User_Role">
+        <PropertyRef Name="Role_Id" />
+      </Principal>
+      <Dependent Role="User_tbl">
+        <PropertyRef Name="Role_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FoodieModelStoreContainer">
+    <EntitySet Name="Rating_tbl" EntityType="Self.Rating_tbl" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_platter" EntityType="Self.tbl_platter" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_restaurent" EntityType="Self.tbl_restaurent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User_Role" EntityType="Self.User_Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User_tbl" EntityType="Self.User_tbl" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Rating_tbl_tbl_platter" Association="Self.FK_Rating_tbl_tbl_platter">
+      <End Role="tbl_platter" EntitySet="tbl_platter" />
+      <End Role="Rating_tbl" EntitySet="Rating_tbl" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_platter_tbl_restaurent" Association="Self.FK_tbl_platter_tbl_restaurent">
+      <End Role="tbl_restaurent" EntitySet="tbl_restaurent" />
+      <End Role="tbl_platter" EntitySet="tbl_platter" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_restaurent_User_tbl" Association="Self.FK_tbl_restaurent_User_tbl">
+      <End Role="User_tbl" EntitySet="User_tbl" />
+      <End Role="tbl_restaurent" EntitySet="tbl_restaurent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_tbl_User_Role" Association="Self.FK_User_tbl_User_Role">
+      <End Role="User_Role" EntitySet="User_Role" />
+      <End Role="User_tbl" EntitySet="User_tbl" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

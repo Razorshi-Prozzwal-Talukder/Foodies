@@ -1,0 +1,114 @@
+﻿
+
+
+body{
+    padding-bottom:0;
+    margin-bottom:0;
+}
+
+
+
+
+
+
+/*Search bar*/
+
+
+
+.olContent {
+    width: 100%;
+}
+
+
+.olSearch {
+    width: 100%;
+}
+
+    .olSearch .inputComn {
+        margin-bottom: 0;
+    }
+
+.inputComn {
+    color: black;
+    font-size: 14px;
+    height: 44px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.searchIcon {
+    position: absolute;
+    top: 0;
+    left:25rem;
+}
+
+#searchBtn {
+    background-color: #005faa;
+    border: 0 none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 3px 12px; 
+    text-transform: uppercase;
+    cursor: pointer;
+    height: 100%;
+}
+
+    .searchBtn:hover {
+        background-color: #326987;
+    }
+
+.olSearch {
+    position: relative;
+}
+
+
+
+
+
+
+
+
+.copyright .copyright-right {
+    text-align: right;
+}
+
+.copyright .list-social {
+    float: right;
+    margin-top: -10px;
+}
+
+    .copyright .list-social > li {
+       
+        float: left;
+        margin: 2px 5px;
+    }
+
+        .copyright .list-social > li > a {
+            display: block;
+            width: 30px;
+            height: 30px;
+            position: relative;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            
+            border-radius: 100%;
+            font-size: 20px;
+            color: #333333;
+        }
+
+            .copyright .list-social > li > a:hover {
+                background: #333333;
+                border: 1px solid #333333;
+                font-size: 20px;
+                color: #ffffff;
+            }
+
+            .copyright .list-social > li > a .fa {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -8px;
+                margin-top: -9px;
+            }

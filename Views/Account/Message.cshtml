@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Message</title>
+</head>
+<body style="margin:0 auto;text-align:center">
+        <div class="text-center">
+
+            <h2>Your secret code is: @ViewBag.Message</h2>
+            <p><h4>Please keep this code & use it as your Code to create platter. We will not be able to create platter list without this code </h4></p>
+
+            <p>
+                @Html.ActionLink("Click Here to Login", "Login", "Account")
+            </p>
+
+
+
+
+    </div>
+</body>
+</html>

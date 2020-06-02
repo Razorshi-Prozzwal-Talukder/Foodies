@@ -1,0 +1,234 @@
+﻿@model Foodies.MyModel.User
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<head>
+
+    <link href="~/CustomStyle/RegisterStyleSheet.css" rel="stylesheet" />
+</head>
+
+
+<body>
+    <div id="RegistrationFormLayout">
+        <div class="row mx-0">
+
+            <div class="d-none col-md-5 d-md-block" id="RegisImage">
+                <img src="~/Image/here.png" alt="Register" class="img-responsive" />
+            </div>
+
+
+            <div class="col-12 col-md-7" id="regisForm">
+
+
+                <h3>Login Here</h3>
+                @using (Html.BeginForm("LogIn", "Account", FormMethod.Post, new { htmlAttributes = new { @class = "form-horizontal" } }))
+                {
+                    <div class="row">
+
+
+
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+
+                                    @Html.EditorFor(model => model.user_name, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter Name" } })
+                                    <br />
+                                    @Html.ValidationMessageFor(model => model.user_name, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+
+
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+
+                                    @Html.EditorFor(model => model.user_email, new { htmlAttributes = new { @class = "form-control", @placeholder = "Enter Email" } })
+                                    <br />
+                                    @Html.ValidationMessageFor(model => model.user_email, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+
+                        <br />
+                        <div class="form-group">
+                            <div class="col-md-12 col-lg-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                    @Html.PasswordFor(model => model.user_password, new { @class = "form-control", @placeholder = "*******" })
+                                    <br />
+                                    @Html.ValidationMessageFor(model => model.user_password, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+
+                        <br />
+                        <div class="form-group">
+                            <div class="col-md-offset-4 col-md-2">
+                                <input type="submit" value="Log-in" class="btn btn-primary btn-md" style="margin-top:10px;" />
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <br />
+
+                    @Html.ActionLink("Click to SignUp", "Signup")
+
+
+
+
+
+
+                }
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+@*<body>
+    <div id="LogInFormLayout" class="container">
+        <div class="row mx-0">
+
+
+            <div class="col-md-6" id="LogInForm">
+
+                @using (Html.BeginForm("LogIn", "Account", FormMethod.Post))
+                {
+                    <h3>Login Form</h3>
+
+                    <form class="form-horizontal">
+
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    @Html.EditorFor(model => model.user_email, new { htmlAttributes = new { @class = "form-control", @placeholder = "Email" } })
+                                    <br />
+                                    @Html.ValidationMessageFor(model => model.user_email, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <div class="col-md-12 col-lg-12">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                    @Html.PasswordFor(model => model.user_password, new { @class = "form-control", @placeholder = "*******" })
+                                    <br />
+                                    @Html.ValidationMessageFor(model => model.user_password, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="form-group">
+                            <div class="col-md-offset-6 col-md-2">
+                                <input type="submit" value="Login" class="btn btn-primary btn-md" style="margin-top:10px;" />
+                            </div>
+                        </div>
+
+
+                    </form>
+
+                    
+                }
+            </div>
+
+            <div class= "col-md-6 d-md-block" id="LogInImage">
+                <img src="~/Image/image.png" alt="Register" class="img-responsive" />
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-offset-0 col-md-8">
+
+                @Html.ActionLink("Click to Signup", "Signup")
+            </div>
+        </div>
+    </div>
+ 
+</body>*@
+
+
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>User_tbl</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.user_email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.user_email, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.user_email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.user_password, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.PasswordFor(model => model.user_password, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.user_password, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Login" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Click to Signup", "Signup")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}*@

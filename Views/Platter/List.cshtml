@@ -1,0 +1,141 @@
+﻿
+@model IEnumerable<Foodies.Models.JoinClass>
+
+@using Foodies.MyModel
+
+@using Foodies.MyModel;
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<head>
+    @Scripts.Render("~/bundles/jquery")
+
+
+
+</head>
+
+
+@if (@ViewBag.Msg != null)
+{
+<h2 class="text-center">@ViewBag.Msg</h2>
+
+}
+
+else
+{
+
+
+<body class="container" style="background-color:white;">
+    <h2 class="text-center">Platter List</h2>
+
+
+
+
+    <table class="table table-responsive " style="background-color:ghostwhite;">
+
+
+        <tr>
+            <th style=" text-align:center;">
+                @Html.DisplayNameFor(model => model.restaurentdetail.Rest_id)
+            </th>
+            <th style=" text-align:center;">
+                @Html.DisplayNameFor(model => model.platterdetail.platter_name)
+            </th>
+            <th style=" text-align:center;">
+                @Html.DisplayNameFor(model => model.platterdetail.platter_description)
+            </th>
+            <th style=" text-align:center;">
+                @Html.DisplayNameFor(model => model.platterdetail.platter_price)
+            </th>
+            <th style=" text-align:center;">
+                @Html.DisplayNameFor(model => model.platterdetail.platter_image)
+            </th>
+            @*<th style=" text-align:center;">
+                @Html.DisplayNameFor(model => model.secret_code)
+            </th>*@
+
+            <th style=" text-align:center;">
+                @Html.DisplayNameFor(model => model.restaurentdetail.Rest_name)
+            </th>
+
+            <th style=" text-align:center;">
+                @Html.DisplayNameFor(model => model.restaurentdetail.Rest_location)
+            </th>
+
+            <th style=" text-align:center;">
+                @Html.DisplayNameFor(model => model.restaurentdetail.Rest_phone)
+            </th>
+            <th style=" text-align:center;">Action</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+
+            @Html.HiddenFor(modelItem => item.restaurentdetail.Rest_id)
+            @Html.HiddenFor(modelItem => item.restaurentdetail.secret_code)
+            @Html.HiddenFor(modelItem => item.restaurentdetail.User_id)
+            @Html.HiddenFor(modelItem => item.platterdetail.secret_code)
+            @Html.HiddenFor(modelItem => item.platterdetail.Rest_id)
+
+            using (Html.BeginForm("Delete", "Platter", new { id = item.platterdetail.platter_id }))
+            {
+                <tr>
+                    <td style="vertical-align:middle; text-align:center;">
+                        @Html.DisplayFor(modelItem => item.restaurentdetail.Rest_id)
+                    </td>
+
+                    <td style="vertical-align:middle; text-align:center;">
+                        @Html.DisplayFor(modelItem => item.platterdetail.platter_name)
+                    </td>
+
+                    <td style="vertical-align:middle; text-align:center;width:20%;">
+                        <p style="text-align:justify;">@Html.DisplayFor(modelItem => item.platterdetail.platter_description)</p>
+                    </td>
+
+                    <td style="vertical-align:middle; text-align:center;">
+                        @Html.DisplayFor(modelItem => item.platterdetail.platter_price)
+                    </td>
+
+                    <td style="vertical-align:middle; text-align:center;">
+                        @{
+                            var base64 = Convert.ToBase64String(item.platterdetail.platter_image);
+                            var imgsrc = string.Format("data:image/gif;base64,{0}", base64);
+                        }
+                        <img src='@imgsrc' style="max-width:100px; max-height:100px" />
+                    </td>
+
+
+                    <td style="vertical-align:middle; text-align:center;">
+                        @Html.DisplayFor(modelItem => item.restaurentdetail.Rest_name)
+                    </td>
+
+                    <td style="vertical-align:middle; text-align:center;">
+                        @Html.DisplayFor(modelItem => item.restaurentdetail.Rest_location)
+                    </td>
+
+                    <td style="vertical-align:middle; text-align:center;">
+                        @Html.DisplayFor(modelItem => item.restaurentdetail.Rest_phone)
+                    </td>
+                    <td style="vertical-align:middle; text-align:center;">
+
+
+                        @Html.ActionLink("Details", "Details", new { id = item.platterdetail.platter_id }, htmlAttributes: new { @class = "btn btn-primary" }) |
+                        <input type="submit" value="Delete" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this data?');" />
+                    </td>
+                </tr>
+
+            }
+
+        }
+
+    </table>
+
+
+</body>
+
+   }
+
+

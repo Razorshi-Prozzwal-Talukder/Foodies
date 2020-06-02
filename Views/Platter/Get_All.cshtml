@@ -1,0 +1,95 @@
+﻿
+@model IEnumerable<Foodies.Models.tbl_platter>
+
+@using Foodies.MyModel;
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<head>
+    @Scripts.Render("~/bundles/jquery")
+
+
+
+</head>
+
+
+@if (@ViewBag.Msg != null)
+{
+    <h2 class="text-center">@ViewBag.Msg</h2>
+
+    //Html.ActionLink("Create New Platter", "Addplatter", "Platter");
+
+}
+
+else
+{
+    <body class="container" style="background-color:white;">
+        <h2 class="text-center">Menu List</h2>
+
+
+        <table class="table table-responsive " style="background-color:ghostwhite;">
+
+
+            <tr>
+                <th style=" text-align:center;">
+                    @Html.DisplayNameFor(model => model.platter_name)
+                </th>
+                <th style=" text-align:center;">
+                    @Html.DisplayNameFor(model => model.platter_description)
+                </th>
+                <th style=" text-align:center;">
+                    @Html.DisplayNameFor(model => model.platter_price)
+                </th>
+                <th style=" text-align:center;">
+                    @Html.DisplayNameFor(model => model.platter_image)
+                </th>               
+            </tr>
+
+            @foreach (var item in Model)
+            {
+
+
+
+                using (Html.BeginForm("Delete", "Platter", new { id = item.platter_id }))
+                {
+                    <tr>
+
+                        @Html.HiddenFor(mofelItem => item.Rest_id, new { @Value = @Session["Rest_id"] })
+                        @Html.HiddenFor(mofelItem => item.platter_id)
+                        @Html.HiddenFor(mofelItem => item.secret_code)
+
+
+                        <td style="vertical-align:middle; text-align:center;">
+                            @Html.DisplayFor(modelItem => item.platter_name)
+                        </td>
+                        <td style="vertical-align:middle; text-align:center;width:25%;">
+                            <p style="text-align:justify;">@Html.DisplayFor(modelItem => item.platter_description)</p>
+                        </td>
+                        <td style="vertical-align:middle; text-align:center;">
+                            @Html.DisplayFor(modelItem => item.platter_price)
+                        </td>
+                        <td style="vertical-align:middle; text-align:center;">
+                            @{
+                                var base64 = Convert.ToBase64String(item.platter_image);
+                                var imgsrc = string.Format("data:image/gif;base64,{0}", base64);
+                            }
+                            <img src='@imgsrc' style="max-width:100px; max-height:100px" />
+                        </td>
+
+                    </tr>
+
+                }
+
+            }
+
+        </table>
+
+
+    </body>
+
+}
+
+

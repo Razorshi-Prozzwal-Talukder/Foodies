@@ -1,0 +1,98 @@
+﻿@model Foodies.MyModel.Restaurent
+
+@using Foodies.MyModel
+
+@{
+    ViewBag.Title = "Restautrant";
+}
+
+
+<head>
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+</head>
+
+<h2>Restautrant</h2>
+@*@if (Session["User_id"] != null)
+
+{
+<h2>@Session["User_id"]</h2>
+}*@
+@using (Html.BeginForm("Restautrant", "Account", FormMethod.Post))
+{
+
+
+    <div class="form-horizontal">
+        <h4>Table restaurent</h4>
+        <hr />
+
+        @Html.HiddenFor(model => model.Rest_id)
+        @Html.HiddenFor(model => model.User_id, new { @Value = @Session["User_id"] })
+
+        @*<input type="hidden" value="@Session["User_id"]" id="hiddenVal" />*@
+
+        <div class="form-group">
+            <label class="control-label col-md-2" id="btn">Restaurant Name: </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Rest_name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Rest_name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" id="btn">Restaurant Location: </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Rest_location, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Rest_location, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" id="btn">Phone number: </label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Rest_phone, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Rest_phone, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2" id="btn">Secret Code: </label>
+
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.secret_code, new { htmlAttributes = new { @class = "form-control", @placeholder = "Choose a digit between 1-1000 Secret Code" } })
+                @Html.ValidationMessageFor(model => model.secret_code, "", new { @class = "text-danger" })
+            </div>
+
+            <p id="msg"></p>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+
+
+
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+<script>
+    $("#btn").click(function () {
+
+        $("#msg").val("Keep this code to create platter item into your account");
+
+    });
+
+    //var x = $("#hiddenVal").val();
+    //$
+
+
+</script>

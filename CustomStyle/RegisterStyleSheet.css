@@ -1,0 +1,68 @@
+﻿
+body{
+    background-color:ghostwhite;
+}
+
+#RegistrationFormLayout
+{
+    background-color:white;
+    padding:40px 50px;
+    margin-top:30px;
+}
+
+#RegistrationFormLayout #regisForm     
+{
+    padding-top:5px;
+  
+    padding-left:10%;
+    height:auto;
+  
+}
+#RegistrationFormLayout #RegisImage   
+{
+    border-right: 1px solid #ddd;
+
+}
+#RegistrationFormLayout h3
+{
+    
+    color:steelblue;
+    font-weight:700; 
+    margin-bottom:20px;
+    margin-left:15px;
+}
+
+    #RegistrationFormLayout #regisForm input[type="password"] {
+        background: none;
+        /*border: none;
+        outline: none;*/
+        /*box-shadow: none;*/
+        /*border-bottom: 1px solid #ddd;*/
+        line-height:10px;
+    }
+
+    #RegistrationFormLayout #regisForm input[type="text"] {
+        background: none;
+        /*border: none;
+        outline: none;*/
+        /*box-shadow: none;*/
+        /*border-bottom: 1px solid #ddd;*/
+    }
+
+
+#RegistrationFormLayout #regisForm input[type="submit"]
+{
+    border-radius:50px;
+    width:90px;
+    height:40px;
+}
+
+.form-group .input-group
+{
+    margin-bottom:15px;
+}
+.form-group .input-group-addon {
+    padding-left: 5px;
+    box-shadow: none;
+    border-bottom: 1px solid #ddd;
+}

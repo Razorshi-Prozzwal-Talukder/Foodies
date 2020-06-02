@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Confirm";
+}
+
+<br />
+<br />
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+
+<div class="alert alert-warning" style="text-align:center" id="previous">
+    <strong>
+        Please Click the buttun to Confirm Your Account
+    </strong>
+    <br /><br />
+    <br />
+    <input type="submit" class="btn btn-warning" value="Confirm" onclick="Verified()" />
+</div>
+
+
+<div class="alert alert-success text-center" id="after" style="display:none">
+    <strong><span class="glyphicon glyphicon-ok"></span>Congratulation!!!</strong>
+    <p id="msgshow"></p>
+    <br /> <br />
+    @Html.ActionLink("Click here to continue", "Login");
+
+</div>
+
+
+<script>
+    function Verified() {
+
+
+        var regId = @ViewBag.regID;
+       // alert("bvvv");
+
+
+        $.ajax({
+
+            type: "post",
+            url:"/Account/RegConfirm",
+            data: { 'regId': '@ViewBag.regID' },
+
+            success: function (msg) {
+                $("#previous").hide();
+                $("#after").show();
+                //alert(msg);
+                $("#msgshow").text(msg);
+            }
+       
+    })
+
+
+    }
+</script>
+

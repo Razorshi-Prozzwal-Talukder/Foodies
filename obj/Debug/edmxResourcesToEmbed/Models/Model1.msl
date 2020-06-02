@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FoodieModelStoreContainer" CdmEntityContainer="FoodieEntities2">
+    <EntitySetMapping Name="Rating_tbl">
+      <EntityTypeMapping TypeName="FoodieModel.Rating_tbl">
+        <MappingFragment StoreEntitySet="Rating_tbl">
+          <ScalarProperty Name="Rating_id" ColumnName="Rating_id" />
+          <ScalarProperty Name="User_id" ColumnName="User_id" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Platter_id" ColumnName="Platter_id" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="User_name" ColumnName="User_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_platter">
+      <EntityTypeMapping TypeName="FoodieModel.tbl_platter">
+        <MappingFragment StoreEntitySet="tbl_platter">
+          <ScalarProperty Name="platter_id" ColumnName="platter_id" />
+          <ScalarProperty Name="platter_name" ColumnName="platter_name" />
+          <ScalarProperty Name="platter_description" ColumnName="platter_description" />
+          <ScalarProperty Name="platter_image" ColumnName="platter_image" />
+          <ScalarProperty Name="platter_price" ColumnName="platter_price" />
+          <ScalarProperty Name="Rest_id" ColumnName="Rest_id" />
+          <ScalarProperty Name="secret_code" ColumnName="secret_code" />
+          <ScalarProperty Name="rating_total" ColumnName="rating_total" />
+          <ScalarProperty Name="rating_count" ColumnName="rating_count" />
+          <ScalarProperty Name="rating" ColumnName="rating" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_restaurent">
+      <EntityTypeMapping TypeName="FoodieModel.tbl_restaurent">
+        <MappingFragment StoreEntitySet="tbl_restaurent">
+          <ScalarProperty Name="Rest_id" ColumnName="Rest_id" />
+          <ScalarProperty Name="Rest_name" ColumnName="Rest_name" />
+          <ScalarProperty Name="Rest_location" ColumnName="Rest_location" />
+          <ScalarProperty Name="Rest_phone" ColumnName="Rest_phone" />
+          <ScalarProperty Name="secret_code" ColumnName="secret_code" />
+          <ScalarProperty Name="User_id" ColumnName="User_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User_Role">
+      <EntityTypeMapping TypeName="FoodieModel.User_Role">
+        <MappingFragment StoreEntitySet="User_Role">
+          <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+          <ScalarProperty Name="role_name" ColumnName="role_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User_tbl">
+      <EntityTypeMapping TypeName="FoodieModel.User_tbl">
+        <MappingFragment StoreEntitySet="User_tbl">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="user_email" ColumnName="user_email" />
+          <ScalarProperty Name="user_password" ColumnName="user_password" />
+          <ScalarProperty Name="Role_Id" ColumnName="Role_Id" />
+          <ScalarProperty Name="IsValid" ColumnName="IsValid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

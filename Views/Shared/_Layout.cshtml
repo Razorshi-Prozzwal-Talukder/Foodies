@@ -1,0 +1,184 @@
+﻿@using Foodies.Models
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/CustomStyle/MyMainLayout.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body style="padding-bottom:0;">
+    <div class="container-fluid" style="margin-bottom:0;padding-bottom:0;">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+
+
+                    <ul class="nav navbar-nav">
+
+
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+
+
+
+                    </ul>
+
+
+                    <ul class="nav navbar-nav">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+
+
+                            if (Session["manager"] != null)
+                            {
+                                <li> @Html.ActionLink("Add Platter", "Addplatter", "Platter") </li>
+                                if (Session["scode"] != null)
+                                {
+                                    <li>@Html.ActionLink("My Platter List", "Index", new { code = Session["scode"] })</li>
+                                }
+                            }
+
+                            if (Session["admin"] != null)
+                            {
+                                <li>@Html.ActionLink("Platter List", "List", "Platter")</li>
+                            }
+
+
+
+                            @*if (User.IsInRole("Manager"))
+            {
+
+
+                    <li> @Html.ActionLink("Add Platter", "Addplatter", "Platter") </li>
+
+
+            }
+
+
+            if (User.IsInRole("Admin"))
+            {
+                <li>@Html.ActionLink("Platter List", "List", "Platter")</li>
+            }*@
+                        }
+                    </ul>
+
+
+
+                    <ul class="nav navbar-nav navbar-right">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li><a href="#">@User.Identity.Name</a></li>
+
+                            <li>@Html.ActionLink("Logout", "Logout", "Account")</li>
+                        }
+
+                        else
+                        {
+                            <li>@Html.ActionLink("Login", "Login", "Account")</li>
+
+                            <li>@Html.ActionLink("Registration", "Signup", "Account")</li>
+                        }
+
+                    </ul>
+
+                    }
+
+                </div>
+            </div>
+        </div>
+        <div style="margin-bottom:0;padding-bottom:0;">
+
+
+            @RenderBody()
+
+        </div>
+
+
+
+
+
+        <footer class="container">
+            <hr />
+            <div class="row">
+                <div class="col-md-12 copyright">
+
+                    <div class="col-md-6 col-sm-6 copyright-left">
+                        <p>&copy; @DateTime.Now.Year - Foodies. All right reserved.</p>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 copyright-right">
+
+                        <ul class="list-unstyled list-social">
+                            <li><a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>
+@*@<footer style="background-color:white;height:100px;">
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>*@
+
+
+@*<script type="text/javascript">
+
+
+    function onWindowClosing() {
+        if (window.event.clientX < 0 || window.event.clientY < 0) {
+            $.ajax({
+                type: "POST",
+                url: "/Account/Logout"
+            });
+        }
+    };
+
+    function onKeydown(evt) {
+        if (evt != undefined && evt.altKey && evt.keyCode == 115) //Alt + F4
+        {
+            $.ajax({
+                type: "POST",
+                url: "/Account/Logout"
+            });
+        }
+    };
+
+    window.onbeforeunload = onWindowClosing;
+    window.document.onkeydown = onKeydown;
+
+</script>*@
